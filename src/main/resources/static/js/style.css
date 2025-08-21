@@ -1,0 +1,224 @@
+/* 전체 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f9;
+    color: #333;
+}
+
+/* 헤더 */
+header {
+    background: #2db400;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: none; /* 작대기 제거 */
+}
+
+header .brand {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none; /* 밑줄 제거 */
+}
+
+/* 메인 카드 */
+main {
+    max-width: 600px;
+    margin: 60px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+main h1 {
+    margin-bottom: 20px;
+    color: #2db400;
+    font-size: 24px;
+}
+
+/* 입력 영역 공통 */
+form div {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #2db400;
+    box-shadow: 0 0 5px rgba(45,180,0,0.3);
+}
+
+/* 버튼 */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #2db400;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #249700;
+}
+
+/* 구글 로그인 버튼 */
+a.btn-primary {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    background: #db4437;
+    color: white;
+}
+
+a.btn-primary:hover {
+    background: #b23226;
+}
+
+/* cancel 버튼 */
+.cancel-btn {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #333;
+    padding: 8px 12px;
+    border-radius: 6px;
+    background-color: #eee;
+}
+
+.cancel-btn:hover {
+    background-color: #ddd;
+}
+
+/* edit.html 전용 form */
+form.edit-form {
+    max-width: 500px;       /* 중앙 폭 제한 */
+    margin: 40px auto;      /* 중앙 정렬 */
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+form.edit-form div {
+    margin-bottom: 15px;
+}
+
+form.edit-form label {
+    font-weight: bold;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 6px;
+}
+
+form.edit-form input,
+form.edit-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+form.edit-form button {
+    width: 100%;
+    padding: 12px;
+    background: #2db400;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+form.edit-form button:hover {
+    background: #249700;
+}
+
+/* 목록 페이지 */
+ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul li a:hover {
+    color: #2db400;
+}
+
+/* 상세 페이지 */
+main #modify-btn-link,
+main #delete-btn {
+    display: inline-block;
+    margin: 10px 5px 0 0;
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+#modify-btn-link {
+    background-color: #eee;
+    color: #333;
+}
+
+#modify-btn-link:hover {
+    background-color: #ddd;
+}
+
+#delete-btn {
+    background-color: #db4437;
+    color: white;
+}
+
+#delete-btn:hover {
+    background-color: #b23226;
+}
